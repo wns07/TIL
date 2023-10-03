@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181878 {
 	public static void main(String[] args) {			// 원하는 문자열 찾기

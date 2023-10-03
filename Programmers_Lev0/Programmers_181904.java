@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181904 {
 	public static void main(String[] args) {

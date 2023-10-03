@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181841 {
 	public static void main(String[] args) {		// 꼬리 문자열

@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181930 {					// 신기한 문제풀이법이 있음
 	public static void main(String[] args) {

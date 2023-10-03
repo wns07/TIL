@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181888 {
 	public static void main(String[] args) {		// n개 간격의 원소들

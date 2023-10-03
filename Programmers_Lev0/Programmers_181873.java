@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181873 {
 	public static void main(String[] args) {		// 특정한 문자를 대문자로 바꾸기

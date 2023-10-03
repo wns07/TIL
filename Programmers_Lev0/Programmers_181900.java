@@ -1,4 +1,5 @@
-package solve_Lev0;
+package Programmers_Lev0;
+
 public class Programmers_181900 {
 	public static void main(String[] args) {
 		String my_string = "apporoograpemmemprs";

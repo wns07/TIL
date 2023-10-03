@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181868 {
 	public static void main(String[] args) {		// 공백으로 구분하기 2 : 정규식

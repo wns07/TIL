@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181915 {
 	public static void main(String[] args) {		// 글자 이어 붙여 문자열 만들기

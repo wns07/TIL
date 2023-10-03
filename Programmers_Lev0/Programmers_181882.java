@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181882 {
 	public static void main(String[] args) {		// 조건에 맞게 수열 변환하기 1

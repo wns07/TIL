@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 
 public class Programmers_181861 {
 	public static void main(String[] args) {		// 배열의 원소만큼 추가하기

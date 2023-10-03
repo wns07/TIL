@@ -1,4 +1,4 @@
-package solve_Lev0;
+package Programmers_Lev0;
 import java.util.*;
 
 public class Programmers_181870 {

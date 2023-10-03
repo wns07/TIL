@@ -1,6 +1,8 @@
-package test;
+package Template;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 public class Output1 {
 	public static void main(String[] args) throws IOException {
