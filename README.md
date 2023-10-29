@@ -10,7 +10,13 @@
 ### 가. BOJ
 - 10811  
 ### 나. Programmers
-
+- 120840 : 오버플로우
+- 181872 : lastIndexOf
+- 181881 : Arrays.equals(배열1, 배열2), Arrays.copyOf(배열, 길이)
+- 181913 : StringBuffer(멀티쓰레드 환경 내 동기화)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+StringBuilder(단일쓰레드 환경) 의 reverse 메소드
+- 181890 : Arrays.copyOfRange(원본배열, 복사시작인덱스, 복사끝인덱스)
 
 ## 3. Linux 명령어
 ### 1. rm(remove)
