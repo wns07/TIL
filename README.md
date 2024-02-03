@@ -20,6 +20,11 @@ Arrays.copyOf(배열, 길이)
 StringBuilder(단일쓰레드 환경) 의 reverse 메소드
 - 181890 : Arrays.copyOfRange(원본배열, 복사시작인덱스, 복사끝인덱스)
 - 181949 : String -> Char -> 아스키코드 -> Char -> String
+- 181830 : Arrays.copyOf(원본배열, 원본배열에서 복사해올 길이)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Arrays.copyOfRange(원본배열, 복사시작시점, 복사끝시점)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.arraycopy(원본배열, 원본배열의 복사시점, 복사배열, 복사배열의 복사시점, 복사개수)
 
 ## 3. Linux 명령어
 ### 1. rm(remove)
