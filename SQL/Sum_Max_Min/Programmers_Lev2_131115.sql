@@ -1,0 +1,10 @@
+-- 가격이 제일 비싼 식품의 정보 출력하기(Lev2) : Sum, Max, Min
+
+SELECT A.PRODUCT_ID    AS PRODUCT_ID
+     , A.PRODUCT_NAME  AS PRODUCT_NAME
+     , A.PRODUCT_CD    AS PRODUCT_CD
+     , A.CATEGORY      AS CATEGORY
+     , A.PRICE         AS PRICE
+  FROM FOOD_PRODUCT A
+ WHERE A.PRICE = ( SELECT MAX(X.PRICE)
+                     FROM FOOD_PRODUCT X)

@@ -1,0 +1,5 @@
+-- 나이 정보가 없는 회원 수 구하기(Lev1) : IS NULL
+
+SELECT COUNT(A.USER_ID) AS USERS
+  FROM USER_INFO A
+ WHERE AGE IS NULL
