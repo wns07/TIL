@@ -1,0 +1,10 @@
+-- 상위 n개 레코드(Lev1) : SELECT
+-- MySql 은 limit 가 있어서 편리하게 작성할 수 있음
+
+WITH TMP_TBL0 AS (
+SELECT A.NAME
+  FROM ANIMAL_INS A
+ ORDER BY DATETIME
+)
+
+SELECT * FROM TMP_TBL0 WHERE ROWNUM = 1

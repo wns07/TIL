@@ -1,0 +1,6 @@
+-- 동물의 아이디와 이름(Lev1) : SELECT
+
+SELECT A.ANIMAL_ID   AS ANIMAL_ID
+     , A.NAME        AS NAME
+  FROM ANIMAL_INS A
+ ORDER BY ANIMAL_ID
