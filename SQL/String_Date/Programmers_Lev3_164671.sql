@@ -1,0 +1,32 @@
+-- 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기(Lev3) : String, Date
+
+-- 첫번째
+WITH TMP_TBL0 AS (
+SELECT A.BOARD_ID
+  FROM USED_GOODS_BOARD A
+ ORDER BY VIEWS DESC
+)
+, TMP_TBL1 AS (
+SELECT A.BOARD_ID
+  FROM TMP_TBL0 A
+ WHERE ROWNUM = 1
+)
+
+SELECT '/home/grep/src/' || A.BOARD_ID || '/' || A.FILE_ID || A.FILE_NAME || A.FILE_EXT AS FILE_PATH
+  FROM USED_GOODS_FILE A
+     , TMP_TBL1 B
+ WHERE A.BOARD_ID = B.BOARD_ID
+ ORDER BY FILE_PATH DESC
+;
+
+-- 두번째 : ROW_NUMBER() 쓰기 - 그룹별로 순번부여 시 PARTITION BY 사용
+ SELECT '/home/grep/src/' || A.BOARD_ID || '/' || A.FILE_ID || A.FILE_NAME || A.FILE_EXT AS FILE_PATH
+  FROM USED_GOODS_FILE A
+     , (
+            SELECT ROW_NUMBER() OVER(ORDER BY VIEWS DESC) AS RN
+                 , X.BOARD_ID
+              FROM USED_GOODS_BOARD X
+       ) B
+ WHERE A.BOARD_ID = B.BOARD_ID
+   AND B.RN = 1
+ ORDER BY FILE_PATH DESC
