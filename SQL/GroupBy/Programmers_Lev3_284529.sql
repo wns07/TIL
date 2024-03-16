@@ -1,0 +1,11 @@
+-- 부서별 평균 연봉 조회하기 (Lev3) : GROUP BY
+-- MySQL : 평균(AVG), 소수점 첫째자리 반올림( ROUND(값, 0) ) - 오라클과 동일
+
+SELECT A.DEPT_ID            AS DEPT_ID
+     , A.DEPT_NAME_EN       AS DEPT_NAME_EN
+     , ROUND(AVG(B.SAL), 0) AS AVG_SAL
+  FROM HR_DEPARTMENT A
+     , HR_EMPLOYEES  B
+ WHERE A.DEPT_ID = B.DEPT_ID
+ GROUP BY A.DEPT_ID, A.DEPT_NAME_EN
+ ORDER BY AVG_SAL DESC
