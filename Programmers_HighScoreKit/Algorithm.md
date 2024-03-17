@@ -34,6 +34,32 @@
 <br><br>
 
 # 2. HASH
+1) 정의
+- Key-Value 를 가지는 자료구조
+- ex. 전화번호부  
+  Key : 무언가를 찾기위한 검색어 ( ex.이름 )  
+  Value : 검색어로 나온 결과 ( ex.전화번호 )
+
+2) 특징  
+   (1) 모든 데이터 타입으로 접근 가능  
+   (2) 언제 써야 하는가 : String 기반(Key)으로 정보를 기록/관리 할 때
+
+3) 예제(프로그래머스)  
+  (1) 완주하지 못한 선수(42576) : 선수이름이 key  
+  (2) 신고결과 받기(92334)  
+  (3) 의상(42578)
+
+4) 방법
+- 생성  
+  -  HashMap<String, Boolean> map = new HashMap<>();
+- 입력  
+  -  map.put("a", true) ( map["a"] = true )
+- 읽기1  
+  - map.get("a") ( map["a"] )  
+    : "a"라는 key 없을 시 에러
+- 읽기2  
+  - map.getOrDefault("a", false)  
+ : "a"라는 key 에 값이 있으면 a의 value 반환, 없으면 false 반환
 
 
 <br><br><br><br>
